@@ -9,8 +9,16 @@
 	}
 </script>
 
+<svelte:head>
+	<title>main!</title>
+</svelte:head>
+
 <div class="flex h-screen w-screen justify-center items-center flex-col gap-4 absolute z-10">
 	<h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">Virus quiz!!</h1>
+	<img src="https://i.postimg.cc/Y9qDPTMP/ZB47hEKv.png" class="aspect-auto h-64" alt="qrcode" />
+	<p class="leading-7 [&:not(:first-child)] text-red-700 font-bold text-xl">
+		ไม่รองรับกับ โทรศัพท์ เพราะขี้เกียจทำ responsive
+	</p>
 	<p class="leading-7 [&:not(:first-child)]">please select question!</p>
 	<div class="flex gap-5">
 		{#each index_array as { id }}
